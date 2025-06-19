@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 60px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header nav ul li {
+  font-weight: 600;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff6565;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff6565;
+  cursor: default;
+}
+
+section.hero {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+section.hero h1 {
+  font-size: 3rem; /* 48px */
+  margin-bottom: 24px;
+  color: #222;
+}
+
+section.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+section.hero img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.hero button {
+  background-color: #ff6565;
+  color: #fff;
+  border: none;
+  padding: 16px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section.hero button:hover {
+  background-color: #e14c4c;
+}
+
+main {
+  display: flex;
+  gap: 40px;
+  padding: 40px 60px;
+}
+
+article {
+  flex: 2;
+}
+
+article h2,
+article h3 {
+  margin-bottom: 16px;
+  color: #222;
+}
+
+article p {
+  margin-bottom: 16px;
+  color: #444;
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: 700;
+}
+
+aside {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  font-style: italic;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: #ff6565;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  article,
+  aside {
+    flex: none;
+    width: 100%;
+  }
+
+  section.hero h1 {
+    font-size: 2.25rem;
+  }
+
+  section.hero p {
+    font-size: 1.125rem;
+  }
+}
