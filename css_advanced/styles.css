@@ -200,3 +200,106 @@ section.quote footer {
   color: #333333;
   font-size: 1rem;
 }
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: #ff6565;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Videos List Section */
+
+section.videos-list {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section.videos-list h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+section.videos-list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  justify-content: center;
+}
+
+section.videos-list ul li {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+section.videos-list ul li:hover {
+  transform: scale(1.05);
+}
+
+section.videos-list ul li video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.videos-list ul li .video-info {
+  padding: 16px;
+}
+
+section.videos-list ul li .video-info h3 {
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+section.videos-list ul li .video-info p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  article,
+  aside {
+    flex: none;
+    width: 100%;
+  }
+
+  section.hero h1 {
+    font-size: 2.25rem;
+  }
+
+  section.hero p {
+    font-size: 1.125rem;
+  }
+
+  section.videos-list ul li {
+    width: 100%;
+  }
+}
