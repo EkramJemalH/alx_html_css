@@ -2,20 +2,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 600px) {
-  body.works_on_smartphone main {
-    flex-direction: column;
-  }
-}
-
-body.works_on_smartphone article,
-body.works_on_smartphone aside {
-  flex: none;
-  width: 100%;
-  height: auto;
-  overflow-y: visible;
-}
-
 main {
   display: flex;
   flex-direction: row;
@@ -28,4 +14,17 @@ article {
 aside {
   flex: 1;
   overflow-y: auto;
+}
+@media (max-width: 600px) {
+  body.works_on_smartphone main {
+    flex-direction: column;
+  }
+}
+
+body.works_on_smartphone article,
+body.works_on_smartphone aside {
+  flex: none;
+  width: 100%;
+  height: auto;
+  overflow-y: visible;
 }
