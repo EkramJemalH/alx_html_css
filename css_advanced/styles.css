@@ -303,3 +303,91 @@ section.videos-list ul li .video-info p {
     width: 100%;
   }
 }
+section.membership {
+  background-color: #fff7f7; /* soft pinkish background */
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 101, 101, 0.15);
+  text-align: center;
+}
+
+section.membership h2 {
+  font-size: 2.5rem;
+  color: #ff6565; /* main accent color */
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+section.membership p.description {
+  font-size: 1.125rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+section.membership .membership-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+section.membership .card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 24px 32px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+section.membership .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 101, 101, 0.3);
+}
+
+section.membership .card h3 {
+  font-size: 1.5rem;
+  color: #ff6565;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+section.membership .card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+section.membership .card button {
+  background-color: #ff6565;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section.membership .card button:hover {
+  background-color: #e14c4c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section.membership .membership-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.membership .card {
+    width: 90%;
+    margin-bottom: 24px;
+  }
+}
