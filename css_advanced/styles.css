@@ -176,3 +176,27 @@ footer a:hover {
     font-size: 1.125rem;
   }
 }
+/* Quote Section Styling */
+section.quote {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 60px 20px;
+  text-align: center;
+  font-style: italic;
+  color: #555555;
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 60px auto;
+  border-left: 6px solid #ff6565; /* Accent color for quote */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+/* If you have a citation or author below the quote */
+section.quote footer {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 600;
+  color: #333333;
+  font-size: 1rem;
+}
