@@ -201,11 +201,12 @@ section.quote footer {
   font-size: 1rem;
 }
 footer {
+  background-color: #fff0f0; /* Light blush tone matching accent */
+  padding: 40px 20px;
   text-align: center;
-  padding: 20px 0;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-  color: #666;
+  border-top: 1px solid #ffcccc;
+  font-size: 1rem;
+  color: #444;
 }
 
 footer a {
@@ -436,9 +437,8 @@ section.faq .faq-item p {
 @media (max-width: 768px) {
   section.faq {
     padding: 0 15px;
-  }s
-
-  section.faq h2 {
+  }
+  s section.faq h2 {
     font-size: 2rem;
   }
 
